@@ -17,6 +17,7 @@ export class CustomMap{
             }
         })
     }
+
     //create a marker with given lat and lng
     addMarker(mappable: Mappable):void{
 
@@ -27,6 +28,7 @@ export class CustomMap{
                 lng:mappable.location.lng
             }
         })
+        
         //creating info window
         const InfoWindow=new google.maps.InfoWindow({
             content: mappable.markerContent()
